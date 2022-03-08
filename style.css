@@ -1,0 +1,170 @@
+:root{
+    /* Color */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    /* Font Text */
+}
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    display: flex;
+    background-color: var(--Very-Light-Gray);
+    min-height: 100vh;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main-text{
+    margin-top: 2cm;
+    text-align: center;
+}
+.main-text h1 span{
+    color: var(--Very-Dark-Blue);
+    font-size: 1.1cm;
+    font-weight: 200;
+}
+.main-text h1{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 1.1cm;
+    line-height: 1.5cm;
+}
+.main-text p{
+    color: var(--Grayish-Blue);
+    margin-top: 0.5cm;
+    font-size: 0.46cm;
+}
+.four-card{
+    display: grid;
+    grid-template-columns: 10.5cm 10.5cm 10.5cm;
+    gap: 1cm;
+    margin-top: 2cm;
+    height: 15cm;
+}
+.green-card{
+    background-color: white;
+    border-top: 4px solid var(--Cyan);
+    border-radius: 5px;
+    height: 7cm;
+    width: 10.5cm;
+    align-self: center;
+    box-shadow: rgba(129, 171, 226, 0.171) 0px 7px 29px 0px;
+}
+.red-card{
+    background-color: white;
+    border-top: 4px solid var(--Red);
+    border-radius: 5px;
+    height: 7cm;
+    width: 10.5cm;
+    box-shadow: rgba(129, 171, 226, 0.171) 0px 7px 29px 0px;
+}
+.blue-card{
+    background-color: white;
+    border-top: 4px solid var(--Blue);
+    border-radius: 5px;
+    height: 7cm;
+    width: 10.5cm;
+    align-self: center;
+    box-shadow: rgba(129, 171, 226, 0.171) 0px 7px 29px 0px;
+}
+.yellow-card{
+    background-color: white;
+    border-top: 4px solid var(--Orange);
+    border-radius: 5px;
+    height: 7cm;
+    width: 10.5cm;
+    margin-top: 1cm;
+    box-shadow: rgba(129, 171, 226, 0.171) 0px 7px 29px 0px;
+}
+.p-title{
+    color:var(--Very-Dark-Blue);
+    font-weight: 600;
+    margin-top: 0.7cm;
+    margin-left: 1cm;
+    font-size: 0.6cm;
+}
+.p-desc{
+    color: var(--Grayish-Blue);
+    font-size: 0.4cm;
+    margin-left: 1cm;
+    margin-top: 0.2cm;
+}
+.icon{
+    float: right;
+    margin-top: 1.4cm;
+    margin-right: 1cm;
+}
+.br2{
+    display: none;
+}
+@media screen and (max-width: 625px){
+    .br1{
+        display: none;
+    }
+    .br2{
+        display: block;
+    }
+    .main-text{
+        margin-top: 1.5cm;
+        text-align: center;
+    }
+    .main-text h1 span{
+        font-size: 0.8cm;
+    }
+    .main-text h1{
+        font-size: 0.8cm;
+        line-height: 1.1cm;
+    }
+    .main-text p{
+        margin-top: 0.5cm;
+        font-size: 0.50cm;
+    }
+    .four-card{
+        grid-template-columns: 10.5cm;
+        grid-template-rows: 7cm 14.7cm 7cm;
+        gap: 0.7cm;
+        margin-top: 2cm;
+        height: 32cm;
+    }
+    .green-card{
+        height: 7cm;
+        width: 10cm;
+        align-self: center;
+        justify-self: center;
+        box-shadow: rgba(81, 108, 143, 0.288) 0px 7px 29px 0px;
+    }
+    .red-card{
+        height: 7cm;
+        width: 10cm;
+        box-shadow: rgba(81, 108, 143, 0.288) 0px 7px 29px 0px;
+    }
+    .middle-card{
+        justify-self: center;
+    }
+    .blue-card{
+        height: 7cm;
+        width: 10cm;
+        align-self: center;
+        justify-self: center;
+        box-shadow: rgba(81, 108, 143, 0.288) 0px 7px 29px 0px;
+    }
+    .yellow-card{
+        height: 7cm;
+        width: 10cm;
+        margin-top: 0.7cm;
+        box-shadow: rgba(81, 108, 143, 0.288) 0px 7px 29px 0px;
+    }
+}
